@@ -157,7 +157,7 @@ while is_running:
         if collision:
             collision_sound = mixer.Sound('punch.mp3')
             collision_sound.play()
-            bullet_y = 500
+            bullet_y = 600
             visible_bullet = False
             score += 1
             enemy_x[enem] = random.randint(0, 736)
