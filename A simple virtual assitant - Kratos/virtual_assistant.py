@@ -39,7 +39,7 @@ def transform_audio_into_text():
 
         try:
             # search on Google
-            request = r.recognize_google(audio, language="en-gb")
+            request = r.recognize_google(audio, language="en-US")
 
             # test in text
             print("You said " + request)
@@ -140,19 +140,19 @@ def my_assistant():
             webbrowser.open('https://www.youtube.com')
             continue
         elif 'open browser' in my_request:
-            speak ('Of course, I am on it')
+            speak('Of course, I am on it')
             webbrowser.open('https://www.google.com')
             continue
         elif 'what day is today' in my_request:
             ask_day()
             continue
-        elif 'what time it is' in my_request:
+        elif 'what is the time' in my_request:
             ask_time()
             continue
         elif 'do a wikipedia search for' in my_request:
             speak('I am looking for it')
             my_request = my_request.replace('do a wikipedia search for', '')
-            answer = wikipedia.summary(my_request, sentences=1)
+            answer = wikipedia.summary(my_request, sentences=2)
             speak('according to wikipedia: ')
             speak(answer)
             continue
