@@ -173,6 +173,8 @@ def my_assistant():
             speak('I am going to rest. Let me know if you need anything')
             break
 
+        # Many more functionalities can be added
+
 
 # Calling my assistant who is a GOD. The ghost of sparta. Killer of ODIN, ZEUS. KRATOS.
 my_assistant()
